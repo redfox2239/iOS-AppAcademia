@@ -18,6 +18,10 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         NCMBUser.logOut();
+        let defaults = NSUserDefaults.standardUserDefaults();
+        defaults.setObject(nil, forKey: "userName");
+        defaults.setObject(nil, forKey: "userLevel");
+        defaults.synchronize();
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,8 +34,6 @@ class LoginViewController: UIViewController {
         // ユーザー名とパスワードでログイン
         var userId: String! = self.userID.text;
         var password: String! = self.password.text;
-        println("user:\(userId)");
-        println("password:\(password)");
         NCMBUser.logInWithUsernameInBackground(userId, password: password) { (user:NCMBUser!, error:NSError!) -> Void in
             if(error == nil)
             {

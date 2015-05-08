@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F5FF3829-67A4-4CA7-A6B6-7EDC98451ADB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AppAcademia</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C0DF8932F9A98CB69EA2FA7EDF28BCBAEB29954A</key>
+		<string>https://github.com/redfox2239/iOS-AppAcademia</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AppAcademia.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C0DF8932F9A98CB69EA2FA7EDF28BCBAEB29954A</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/redfox2239/iOS-AppAcademia</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C0DF8932F9A98CB69EA2FA7EDF28BCBAEB29954A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C0DF8932F9A98CB69EA2FA7EDF28BCBAEB29954A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AppAcademia</string>
+		</dict>
+	</array>
+</dict>
+</plist>

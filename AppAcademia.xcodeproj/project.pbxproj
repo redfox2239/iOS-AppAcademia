@@ -18,6 +18,10 @@
 		7FDC74981AF7C2970080A0B1 /* RegistFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC74971AF7C2970080A0B1 /* RegistFinishViewController.swift */; };
 		7FDC74DB1AFC98770080A0B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC74DA1AFC98770080A0B1 /* LoginViewController.swift */; };
 		7FDC74DD1AFCCDF60080A0B1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC74DC1AFCCDF60080A0B1 /* MainViewController.swift */; };
+		7FDC74DF1AFD0BFC0080A0B1 /* EventScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC74DE1AFD0BFC0080A0B1 /* EventScheduleTableViewController.swift */; };
+		7FDC74E61AFD103F0080A0B1 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC74E41AFD103F0080A0B1 /* EventTableViewCell.swift */; };
+		7FDC74E71AFD103F0080A0B1 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FDC74E51AFD103F0080A0B1 /* EventTableViewCell.xib */; };
+		7FDC74E91AFD11D00080A0B1 /* soramame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDC74E81AFD11D00080A0B1 /* soramame.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		7FDC74971AF7C2970080A0B1 /* RegistFinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistFinishViewController.swift; sourceTree = "<group>"; };
 		7FDC74DA1AFC98770080A0B1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7FDC74DC1AFCCDF60080A0B1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7FDC74DE1AFD0BFC0080A0B1 /* EventScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventScheduleTableViewController.swift; sourceTree = "<group>"; };
+		7FDC74E41AFD103F0080A0B1 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		7FDC74E51AFD103F0080A0B1 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		7FDC74E81AFD11D00080A0B1 /* soramame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = soramame.jpg; sourceTree = "<group>"; };
 		A25F0D6C6BC85C67A4BC17A5 /* Pods-AppAcademia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppAcademia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppAcademia/Pods-AppAcademia.debug.xcconfig"; sourceTree = "<group>"; };
 		AC640C6059F45ECAB200D8D0 /* libPods-AppAcademia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppAcademia.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96C79A31E9FB6C5B15270B0 /* Pods-AppAcademia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppAcademia.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppAcademia/Pods-AppAcademia.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +121,9 @@
 				7FDC74971AF7C2970080A0B1 /* RegistFinishViewController.swift */,
 				7FDC74DA1AFC98770080A0B1 /* LoginViewController.swift */,
 				7FDC74DC1AFCCDF60080A0B1 /* MainViewController.swift */,
+				7FDC74DE1AFD0BFC0080A0B1 /* EventScheduleTableViewController.swift */,
+				7FDC74E41AFD103F0080A0B1 /* EventTableViewCell.swift */,
+				7FDC74E51AFD103F0080A0B1 /* EventTableViewCell.xib */,
 			);
 			path = AppAcademia;
 			sourceTree = "<group>";
@@ -120,6 +131,7 @@
 		7F44E0581AF3D40800F597CB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7FDC74E81AFD11D00080A0B1 /* soramame.jpg */,
 				7F44E0591AF3D40800F597CB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -232,8 +244,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FDC74E71AFD103F0080A0B1 /* EventTableViewCell.xib in Resources */,
 				7F44E0601AF3D40800F597CB /* Main.storyboard in Resources */,
 				7F44E0651AF3D40900F597CB /* LaunchScreen.xib in Resources */,
+				7FDC74E91AFD11D00080A0B1 /* soramame.jpg in Resources */,
 				7F44E0621AF3D40900F597CB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FDC74E61AFD103F0080A0B1 /* EventTableViewCell.swift in Sources */,
 				7F44E05D1AF3D40800F597CB /* ViewController.swift in Sources */,
+				7FDC74DF1AFD0BFC0080A0B1 /* EventScheduleTableViewController.swift in Sources */,
 				7F44E07B1AF5C13F00F597CB /* WebViewController.swift in Sources */,
 				7F44E05B1AF3D40800F597CB /* AppDelegate.swift in Sources */,
 				7FDC74DD1AFCCDF60080A0B1 /* MainViewController.swift in Sources */,
