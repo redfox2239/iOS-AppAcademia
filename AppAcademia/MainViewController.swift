@@ -11,6 +11,8 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var userLevelLabel: UILabel!
+    @IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,10 +23,14 @@ class MainViewController: UIViewController {
         if((currentUser) != nil)
         {
             self.userNameLabel.text = currentUser.userName;
+            self.getUserLevel(currentUser.userName);
+            self.loginButton.setTitle("ログアウト", forState: UIControlState.Normal);
         }
         else
         {
             self.userNameLabel.text = "";
+            self.userLevelLabel.text = "";
+            self.loginButton.setTitle("ログイン", forState: UIControlState.Normal);
         }
     }
 
@@ -33,6 +39,18 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func getUserLevel(userName: String) {
+        var query = NCMBQuery(className: "userInfo");
+        query.whereKey("userName", equalTo: userName);
+        query.findObjectsInBackgroundWithBlock { (values, error) -> Void in
+            for val in values
+            {
+                var userLevel = val.objectForKey("userLevel") as? String;
+                self.userLevelLabel.text = "レベル\(userLevel!)";
+                self.userLevelLabel.sizeToFit();
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 

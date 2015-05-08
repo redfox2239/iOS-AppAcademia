@@ -139,7 +139,7 @@
             </objects>
             <point key="canvasLocation" x="-220" y="1900"/>
         </scene>
-        <!--View Controller-->
+        <!--ようこそAppAcademiaへ-->
         <scene sceneID="vXq-Js-sNJ">
             <objects>
                 <viewController id="DvL-FR-18H" sceneMemberID="viewController">
@@ -178,7 +178,7 @@
                             <constraint firstItem="TGM-OC-Ftu" firstAttribute="centerX" secondItem="tLX-jc-H2c" secondAttribute="centerX" id="lTx-mp-uMQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2r2-h9-Xo9"/>
+                    <navigationItem key="navigationItem" title="ようこそAppAcademiaへ" id="2r2-h9-Xo9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qp3-TH-5ZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -329,7 +329,7 @@
             </objects>
             <point key="canvasLocation" x="470" y="3970"/>
         </scene>
-        <!--Main View Controller-->
+        <!--AppAcademia-->
         <scene sceneID="LNB-2J-CG6">
             <objects>
                 <viewController id="GwG-ie-hw3" customClass="MainViewController" customModule="AppAcademia" customModuleProvider="target" sceneMemberID="viewController">
@@ -341,21 +341,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ユーザ名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYI-h4-MkP">
-                                <rect key="frame" x="16" y="104" width="144" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="144" id="H8p-wi-5Qy"/>
-                                    <constraint firstAttribute="width" constant="158" id="USZ-GI-JL1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="USZ-GI-JL1"/>
-                                    </mask>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbD-Fe-qfn">
                                 <rect key="frame" x="509" y="100" width="75" height="30"/>
                                 <constraints>
@@ -373,11 +358,37 @@
                                     <segue destination="Ufd-9R-BUB" kind="push" id="oZH-Zg-Bka"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ユーザ名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYI-h4-MkP">
+                                <rect key="frame" x="16" y="104" width="144" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="H8p-wi-5Qy"/>
+                                    <constraint firstAttribute="width" constant="158" id="USZ-GI-JL1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="USZ-GI-JL1"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="レベル" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHa-vy-B6W">
+                                <rect key="frame" x="16" y="133" width="36" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dPe-V7-BSq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="YbD-Fe-qfn" secondAttribute="trailing" id="1nY-qh-2j4"/>
+                            <constraint firstItem="DHa-vy-B6W" firstAttribute="top" secondItem="hYI-h4-MkP" secondAttribute="bottom" constant="8" symbolic="YES" id="9Sp-Td-GML"/>
                             <constraint firstItem="YbD-Fe-qfn" firstAttribute="top" secondItem="Vtf-c4-Rqn" secondAttribute="bottom" constant="36" id="M29-pI-ehT"/>
+                            <constraint firstItem="DHa-vy-B6W" firstAttribute="leading" secondItem="hYI-h4-MkP" secondAttribute="leading" id="P2m-zQ-H0T"/>
                             <constraint firstItem="YbD-Fe-qfn" firstAttribute="leading" secondItem="hYI-h4-MkP" secondAttribute="trailing" id="Qun-ql-iOm"/>
                             <constraint firstItem="YbD-Fe-qfn" firstAttribute="trailing" secondItem="OIE-8y-9Qk" secondAttribute="trailingMargin" id="YUM-o9-FdM"/>
                             <constraint firstItem="hYI-h4-MkP" firstAttribute="leading" secondItem="OIE-8y-9Qk" secondAttribute="leadingMargin" id="fAJ-1W-ePc"/>
@@ -392,8 +403,10 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="dCG-yf-6mg"/>
+                    <navigationItem key="navigationItem" title="AppAcademia" id="dCG-yf-6mg"/>
                     <connections>
+                        <outlet property="loginButton" destination="YbD-Fe-qfn" id="d6A-WP-elE"/>
+                        <outlet property="userLevelLabel" destination="DHa-vy-B6W" id="XSp-q6-FxZ"/>
                         <outlet property="userNameLabel" destination="hYI-h4-MkP" id="DJf-mr-mXZ"/>
                     </connections>
                 </viewController>
