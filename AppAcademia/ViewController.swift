@@ -37,6 +37,9 @@ class ViewController: UIViewController {
         userInfo.signUpInBackgroundWithBlock{(error:NSError!)->Void in
             if (error == nil){
                 println("Sign up succeeded!");
+                let defaults = NSUserDefaults.standardUserDefaults();
+                defaults.setObject(self.password.text, forKey: "password");
+                defaults.synchronize();
                 self.setUserLevel(userInfo.userName);
                 self.performSegueWithIdentifier("registFinish", sender:self);
             }

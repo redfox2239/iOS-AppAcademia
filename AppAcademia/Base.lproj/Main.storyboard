@@ -142,7 +142,7 @@
         <!--ようこそAppAcademiaへ-->
         <scene sceneID="vXq-Js-sNJ">
             <objects>
-                <viewController id="DvL-FR-18H" sceneMemberID="viewController">
+                <viewController id="DvL-FR-18H" customClass="InitialViewController" customModule="AppAcademia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MFo-Z4-TEr"/>
                         <viewControllerLayoutGuide type="bottom" id="jpI-ZM-xN7"/>
@@ -179,6 +179,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ようこそAppAcademiaへ" id="2r2-h9-Xo9"/>
+                    <connections>
+                        <segue destination="YTZ-tg-66T" kind="modal" identifier="loginDid" id="Ye4-gB-T0f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qp3-TH-5ZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -269,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LX3-LR-O2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-350" y="3058"/>
+            <point key="canvasLocation" x="-302" y="2970"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="g0q-th-HhS">
@@ -311,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LR5-KN-iWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="530" y="2601"/>
+            <point key="canvasLocation" x="626" y="2553"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6BD-56-nSW">
@@ -327,7 +330,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dd6-sX-RZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="470" y="3970"/>
+            <point key="canvasLocation" x="446" y="4562"/>
         </scene>
         <!--Event Schedule Table View Controller-->
         <scene sceneID="7zC-sG-28v">
@@ -412,7 +415,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULU-Dh-OyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1014" y="4607"/>
+            <point key="canvasLocation" x="-942" y="5207"/>
         </scene>
         <!--Regist Finish View Controller-->
         <scene sceneID="m49-kg-trb">
@@ -454,11 +457,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="txN-Oy-PhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1322" y="1892"/>
+            <point key="canvasLocation" x="1506" y="1884"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bbI-HV-z47"/>
-        <segue reference="4dZ-Lv-NWZ"/>
+        <segue reference="Ye4-gB-T0f"/>
+        <segue reference="hZ6-kV-Bjb"/>
     </inferredMetricsTieBreakers>
 </document>

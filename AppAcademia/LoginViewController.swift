@@ -38,6 +38,10 @@ class LoginViewController: UIViewController {
             if(error == nil)
             {
                 println("成功");
+                let defaults = NSUserDefaults.standardUserDefaults();
+                defaults.setObject(password, forKey: "password");
+                defaults.synchronize();
+
                 self.performSegueWithIdentifier("loginFinish", sender: self);
             }
             else
