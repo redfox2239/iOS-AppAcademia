@@ -44,7 +44,10 @@ class EventScheduleTableViewController: UITableViewController, UITableViewDelega
         {
             self.userNameLabel.text = "";
             self.userLevelLabel.text = "";
+            self.eventData.removeAll(keepCapacity: true);
             self.loginButton.setTitle("ログイン", forState: UIControlState.Normal);
+            
+            self.tableView.reloadData();
         }
     }
     

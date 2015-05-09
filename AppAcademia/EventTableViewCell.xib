@@ -44,15 +44,23 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMj-aN-obA">
+                        <rect key="frame" x="0.0" y="99" width="320" height="1"/>
+                        <color key="backgroundColor" red="1" green="0.64294197080000004" blue="0.7279567025" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="5gy-Df-tMV" firstAttribute="leading" secondItem="hXg-0N-jes" secondAttribute="leading" id="4ON-V3-5Bs"/>
                     <constraint firstItem="sMO-q5-HQ3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="9o2-rb-tAq"/>
                     <constraint firstItem="Z6k-Fq-FeI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Fzp-Ld-dpc"/>
+                    <constraint firstAttribute="trailing" secondItem="nMj-aN-obA" secondAttribute="trailing" id="Guu-WB-4WE"/>
                     <constraint firstItem="Z6k-Fq-FeI" firstAttribute="leading" secondItem="sMO-q5-HQ3" secondAttribute="trailing" constant="8" symbolic="YES" id="HqA-Xb-pxp"/>
+                    <constraint firstItem="nMj-aN-obA" firstAttribute="top" secondItem="sMO-q5-HQ3" secondAttribute="bottom" constant="4" id="Nt6-8n-JhO"/>
                     <constraint firstItem="sMO-q5-HQ3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Oei-AW-7Vk"/>
                     <constraint firstItem="hXg-0N-jes" firstAttribute="trailing" secondItem="5gy-Df-tMV" secondAttribute="trailing" id="UPk-jK-SOO"/>
+                    <constraint firstItem="nMj-aN-obA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Wap-5x-2uH"/>
                     <constraint firstAttribute="bottomMargin" secondItem="hXg-0N-jes" secondAttribute="bottom" constant="-4" id="XMq-6N-r2u"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="nMj-aN-obA" secondAttribute="bottom" constant="-9" id="aMN-AT-gyV"/>
                     <constraint firstAttribute="bottomMargin" secondItem="sMO-q5-HQ3" secondAttribute="bottom" constant="-4" id="gzU-vd-E2L"/>
                     <constraint firstItem="hXg-0N-jes" firstAttribute="top" secondItem="5gy-Df-tMV" secondAttribute="bottom" constant="-3" id="lzJ-7D-G3e"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Z6k-Fq-FeI" secondAttribute="trailing" constant="10" id="qzG-9f-zNK"/>
